@@ -1,0 +1,81 @@
+<html>
+     <head>
+         <title>
+
+         </title>
+     </head>
+     <script src="js/registation.js"></script>
+     <script src="js/eye.js"></script>
+
+     <link rel="stylesheet" href="css/registation.css" >
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="https://kit.fontawesome.com/b717b6ac83.js" crossorigin="anonymous"></script>
+     
+     <body>
+        <main>
+           <div class="container">
+              <div class="container_col1">
+                 <img src="images/medicos.png" alt="" height="100px">
+                 <h2>WELCOME</h2>
+                 <p>Do you have a account?</p>
+                 <a href="./login.html">
+                  <input type="button" name="submit" id="logbtn" value="LogIn">
+                  </a>
+                 
+
+              </div>
+
+              <div class="container_col2">
+               <div class="card">
+                  <h1>Registation</h1>
+                  <form name="regform" action="login.html"  onsubmit="return validation()">
+                     <div class="registerform">
+                        <div class="container_col2_col1">
+                           <div>
+                              <label>First Name:</label>
+                              <input type="text" id="fname" name="fname" placeholder="Enter Your First Name" required>
+                           </div>
+                           <div>
+                              <label>Last Name:</label>
+                              <input type="text" id="lname" name="lname" placeholder="Enter Your Last Name" required>
+                           </div>
+                           <div class="password">
+                              <label>Password:</label>
+                              <input type="password" id="pswd" name="Password" required>
+                              <i class="fas fa-eye" id="eye" onclick="toggle()"></i>
+                           </div>
+
+                        </div>
+                        <div class="container_col2_col2">
+                           <div>
+                              <label>Email:</label>
+                              <input type="email" id="useremail" name="Email"  placeholder="eg:abc@gmail.com" required>
+                           </div>
+                           <div>
+                              <label>Phone:</label>
+                              <input type="number" id="phno" name="phone"  placeholder="Enter your Number" required>
+                           </div>
+
+
+                        </div>
+                     </div>
+                     <div>
+                        <input type="submit" name="submit" id="sub" value="Register" >
+      
+                     </div>
+                 </form>
+                  
+     
+     
+               
+     
+              </div>
+
+              </div>
+
+           </div>
+        </main>
+         
+
+     </body>
+</html>
